@@ -10,19 +10,7 @@ function Home() {
         let value = e.target.value;
         let domain = value.replace('https://', '').replace('http://', '').split('/')[0];
         setLink(domain);
-        // console.log(getTitle(value).then((res)=>console.log(res)))
-
     }
-    // const getTitle = (url) => {
-        
-    //     return fetch(`https://crossorigin.me/${url}`)
-    //         .then((response) => response.text())
-    //         .then((html) => {
-    //             const doc = new DOMParser().parseFromString(html, "text/html");
-    //             const title = doc.querySelectorAll('title')[0];
-    //            return title.innerText;
-    //         });
-    // }
 
     const handlePriority = (e) => {
         let value = e.target.value;
